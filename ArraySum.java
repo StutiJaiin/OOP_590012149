@@ -14,7 +14,7 @@ public class ArraySum {
         Scanner s1 = new Scanner(System.in);
         System.out.println("Enter the elements of the array: ");
         for (int i=0; i<5; i++){
-           // arr[i] = s1.nextInt();
+           arr[i] = s1.nextInt();
 
             sum_array += arr[i];
             
@@ -37,4 +37,5 @@ public class ArraySum {
     }
 
 }
+
 
