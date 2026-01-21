@@ -14,9 +14,14 @@ public class ArraySum {
         Scanner s1 = new Scanner(System.in);
         System.out.println("Enter the elements of the array: ");
         for (int i=0; i<5; i++){
-            arr[i] = s1.nextInt();
+           // arr[i] = s1.nextInt();
 
             sum_array += arr[i];
+            
+            
+
+            /* sum_array += args[i];: this will show an error as it excepts a string type 
+            but it is actually an int, so we can convert it into an array type, but cannot change String[] to Integer[]*/
 
 
         }
@@ -32,3 +37,4 @@ public class ArraySum {
     }
 
 }
+
