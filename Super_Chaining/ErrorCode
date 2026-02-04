@@ -1,0 +1,26 @@
+public class sup {
+    int x;
+    String name;
+
+    void details(){
+        System.out.println("Your name is: " + name);
+
+    }
+
+    sup(String name){
+        this.name = name;
+    }
+}
+
+class child extends sup{
+    child(String name){
+        super(name);
+        super(name);                                                                //this will give an error as we are not allowed to call more than one constructor in a program
+    }
+
+
+public static void main (String[] args) {
+    child obj = new child("Stuti");
+    System.out.println("Your name is: " + obj.name);
+}
+}
