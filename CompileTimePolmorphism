@@ -1,0 +1,22 @@
+public class CTPoly {
+
+    void sum(int a, int b) {
+
+        System.out.println("The sum is: " + (a + b));
+    }
+
+
+    void sum(int c, int x, int y) {
+
+        System.out.println("The sum is: " + (c + x));
+
+    }
+
+
+    public static void main(String[] args) {            
+        CTPoly obj = new CTPoly();                                              //same name but different parameters in the methods
+        obj.sum(5, 6);
+        obj.sum(4, 5, 6);
+
+    }
+}
