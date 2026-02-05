@@ -1,0 +1,22 @@
+//runtime polymorphism or method overriding 
+public class RTPoly {
+    void method(int x, int y){
+        System.out.println("The value of the variables is: " + x + " " + y);
+    }
+}
+
+class childd extends RTPoly{
+    @Override
+    void method(int x, int y) {
+
+        System.out.println("The value of the variables are: " + x + " " + y);
+
+    }
+
+
+public static void main(String[] args){
+    RTPoly obj = new childd();
+    obj.method(7,8);
+
+}
+}
