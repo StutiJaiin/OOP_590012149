@@ -1,0 +1,22 @@
+abstract class abstrac {
+    int a = 9;
+
+    void f() {
+        System.out.println("The value of a: " + a);
+
+    }
+}
+
+class childa extends abstrac {
+    void f() {
+        super.f();
+    }
+
+
+    public static void main(String[] args) {
+        childa obj = new childa();
+
+        obj.f();
+
+    }
+}
