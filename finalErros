@@ -1,0 +1,36 @@
+public class fin {
+    final int c =0;
+    final void method(){
+        System.out.println("This is a 'final' method");
+    }
+
+    final class fin1{
+        int a =0;
+
+        @Override
+
+        void method(){
+            System.out.println("This is another parameter");          //final method error
+        }
+
+
+    }
+
+    class child extends fin1{                                        //final class cannot be inherited
+
+    }
+
+    
+
+    public static void main(String[] args){
+
+
+        fin obj1 = new fin();
+
+        obj1.c= 6;                                                      //final variable error
+
+
+    }
+
+
+}
