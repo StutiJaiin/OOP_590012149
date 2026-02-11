@@ -1,0 +1,25 @@
+abstract class sample {
+    int a = 9;
+
+    abstract void f();
+}
+
+    class abstraction extends sample {
+
+        void f() {
+            System.out.println("The value of a: " + a);
+        }
+
+      
+
+
+        public static void main(String[] args) {
+            abstraction obj = new abstraction();
+
+            obj.f();
+
+
+        }
+
+    }
+
