@@ -1,0 +1,15 @@
+package pack1;
+public class pack {
+    public int mileage;
+    public int price;
+}
+
+class Main {
+    public static void main(String[] args) {
+        pack c = new pack();
+        c.price = 100;
+        c.mileage = 20;
+
+    }
+
+}
