@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class rw {
+    public static void main(String[] args) {
+        try {
+            Scanner s = new Scanner(System.in);
+            FileReader obj = new FileReader("sample.txt");
+            int i;
+            String text;
+
+
+            while((i= obj.read()) != -1) {
+                System.out.println((char) i);             //if we don't write (char), it won't convert it to characters, and shows the ASCII values
+            }
+
+            obj.close();
+
+            System.out.println("Enter the new text: ");
+            text = s.nextLine();
+            FileWriter fw = new FileWriter("sample.txt", true);
+            fw.write("This is the new text" );
+
+            fw.close();
+
+        }
+
+        catch(IOException e){
+            System.out.println(e);
+        }
+
+    }
+}
