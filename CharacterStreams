@@ -1,0 +1,27 @@
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class rw {
+    public static void main(String[] args) {
+        try {
+            FileReader obj = new FileReader("sample.txt");
+            int i;
+            while((i= obj.read()) != -1) {
+                System.out.println((char) i);             //if we don't write (char), it won't convert it to characters, and shows the ASCII values
+            }
+
+            obj.close();
+            FileWriter fw = new FileWriter("sample.txt", true);
+            fw.write("This is the new text" );
+
+            fw.close();
+
+        }
+
+        catch(IOException e){
+            System.out.println(e);
+        }
+
+    }
+}
