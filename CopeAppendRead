@@ -1,0 +1,39 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.FileReader;
+
+public class lab6 {
+    public static void main(String[] args){
+        try{
+            int i;
+
+            FileInputStream obj = new FileInputStream("sample2.txt");
+
+            FileOutputStream fos = new FileOutputStream("sample.txt", true);
+
+            while((i = obj.read()) != -1){
+
+                fos.write(i);
+
+            }
+
+            obj.close();
+            fos.close();
+
+            FileReader fr = new FileReader("sample.txt");
+
+            while((i= fr.read()) != -1){
+                System.out.println((char) i);
+            }
+
+            fr.close();
+
+
+        }
+        catch(IOException e){
+            System.out.println(e);
+
+        }
+    }
+}
